@@ -23,9 +23,9 @@ var extend = require('util')._extend;
 
 var watsonDialogCredentials =  extend({
   // used when running locally
-  url: 'https://gateway.watsonplatform.net/dialog/api',
-  username: 'xxx',
-  password: 'xxx',
+  url: 'https://gateway.watsonplatform.net/conversation/api/v1/workspaces/b354d966-b5ea-4036-b319-f6705d7e098b/message/',
+  username: '10c1a992-fee8-4061-8290-44d0f6f2c5b4',
+  password: 'fLvItEPAvfUu',
   version: 'v1'
 }, getServiceCredentialsFromBluemix('dialog')); 
 
@@ -38,7 +38,7 @@ var watsonNLCCredentials =  extend({
 }, getServiceCredentialsFromBluemix('natural_language_classifier')); 
 
 // define dialog id here when running locally. when running on Bluemix set an environment variable
-var dialog_id = process.env.DIALOG_ID || 'ebca53c9-6e15-4b5a-b440-8e795efc2d1f';
+var dialog_id = process.env.DIALOG_ID || 'b354d966-b5ea-4036-b319-f6705d7e098b';
 
 // replace these values with your values from Facebook or set them in Bluemix environment variables
 var token = process.env.TOKEN || "xxx";
